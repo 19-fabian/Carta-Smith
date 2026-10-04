@@ -55,8 +55,6 @@ La barra inferior tiene los mismos controles. La barra de progreso superior y el
 
 **Notas sin que se proyecten:** conecta el proyector como pantalla extendida, pulsa `V`, arrastra la ventana de notas a la pantalla del portátil y deja la presentación en el proyector (pantalla completa). Las dos ventanas se mantienen sincronizadas.
 
-**Campos editables de la portada:** haz clic en *Universidad, Asignatura, Docente y Fecha* para escribirlos. Se guardan en el navegador. En modo exposición, los campos vacíos se ocultan.
-
 ---
 
 ## 3. Contenido

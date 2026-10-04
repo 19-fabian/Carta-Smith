@@ -250,7 +250,6 @@
       <div class="content" style="grid-template-columns: 680px 1fr; gap: 30px">
         <div class="center rv zoom" style="position:relative">
           <div class="chart-host" style="width:650px;height:650px"></div>
-          <div class="hint">Clic o arrastre sobre la carta · con la carta enfocada: ← ↑ → ↓ (Shift = paso grande)</div>
         </div>
         <div class="col" style="position:relative">
           <div class="panel glow rv right" style="padding:12px 16px">

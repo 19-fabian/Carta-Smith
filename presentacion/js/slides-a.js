@@ -38,12 +38,6 @@
         <div class="rv glowin" style="--i:1"><h1 class="cover-title">CARTA DE SMITH</h1></div>
         <p class="cover-sub rv" style="--i:4">El lenguaje gráfico de las impedancias y las ondas reflejadas</p>
         <p class="cover-sub2 rv" style="--i:5">Análisis de impedancias, coeficiente de reflexión y adaptación en líneas de transmisión.</p>
-        <div class="cover-meta rv" style="--i:6">
-          <div><span class="m-lbl">Universidad</span><span class="editable" contenteditable="true" spellcheck="false" data-store="univ" data-ph="Nombre de la universidad"></span></div>
-          <div><span class="m-lbl">Asignatura</span><span class="editable" contenteditable="true" spellcheck="false" data-store="asig" data-ph="Nombre de la asignatura"></span></div>
-          <div><span class="m-lbl">Docente</span><span class="editable" contenteditable="true" spellcheck="false" data-store="doc" data-ph="Nombre del docente"></span></div>
-          <div><span class="m-lbl">Fecha</span><span class="editable" contenteditable="true" spellcheck="false" data-store="fecha" data-ph="Fecha de la exposición"></span></div>
-        </div>
       </div>
       <div class="cover-team">
         <div class="member rv" style="--i:8"><span class="dot"></span>SHARON MAWENZY MARTINEZ</div>
@@ -55,7 +49,7 @@
       <p>Mientras la carta se dibuja en el fondo, explicar el objetivo: <em>entender cómo se comporta una señal de radiofrecuencia cuando viaja por una línea y llega a una carga</em>, y cómo una herramienta gráfica —la Carta de Smith— permite analizar y corregir ese comportamiento.</p>
       <p>La onda que recorre la parte inferior representa la señal que se propaga por una línea de transmisión. El punto que gira sobre la carta muestra algo que veremos más adelante: al desplazarnos por una línea, la impedancia "da vueltas" sobre la carta.</p>
       <p>Hoja de ruta: 1) el problema de las reflexiones, 2) fundamentos (impedancia y líneas), 3) construcción de la carta, 4) coeficiente de reflexión y VSWR, 5) desplazamiento y adaptación, 6) aplicaciones en antenas, microstrip y S11, 7) conclusiones.</p>
-      <p class="muted">Los campos de universidad, asignatura, docente y fecha son editables: haz clic sobre ellos antes de la exposición (se guardan en este navegador).</p>`,
+      `,
     init(el) {
       this.chart = new SmithChart(q(el, '.cover-chart'), { labels: false, phaseScale: false, point: true, vector: true, vswr: true, hidden: true });
       const pg = q(el, '.cv-particles');
