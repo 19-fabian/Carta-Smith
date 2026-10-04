@@ -656,7 +656,6 @@
       <div class="content" style="grid-template-columns: 1fr 600px">
         <div class="center rv zoom"><div class="chart-host" style="width:650px;height:650px"></div></div>
         <div class="col">
-          <p class="small muted rv right" style="margin:0">Selecciona una etiqueta (o un número sobre la carta):</p>
           <div class="parts-grid rv right">
             ${PARTS.map(p => `<button class="btn sm part-btn" data-part="${p.id}"><span class="pn">${p.n}</span>${p.t}</button>`).join('')}
           </div>
