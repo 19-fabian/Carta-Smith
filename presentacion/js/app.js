@@ -49,7 +49,7 @@
       if (window.RF) RF.selfTest();
       if (/[?&]test\b/.test(location.search)) {
         const sc = document.createElement('script');
-        sc.src = 'js/selftest.js';
+        sc.src = 'js/selftest.js?v=' + Date.now();
         document.body.appendChild(sc);
       }
     },

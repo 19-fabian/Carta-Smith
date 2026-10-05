@@ -261,7 +261,7 @@
               ${ro('z normalizada', 'z')}${ro('Z (Ω)', 'Z', 'violet')}
               ${ro('Γ', 'g')}${ro('|Γ|', 'm', 'orange')}
               ${ro('∠Γ', 'ph', 'violet')}${ro('VSWR', 'vswr', 'turq')}
-              ${ro('Potencia reflejada', 'p', 'orange')}${ro('Pérdida de retorno', 'rl', 'turq')}
+              <div class="ro orange wide"><div class="lbl">Potencia reflejada</div><div class="val" data-k="p">—</div></div>
             </div>
             <div class="status info" data-k="cls" style="margin-top:10px; font-size:16px"></div>
           </div>
@@ -280,7 +280,7 @@
       </div>`,
     notes: `
       <p><strong>Esta es la herramienta central de la exposición.</strong> Invitar al público a proponer impedancias.</p>
-      <p><strong>Uso:</strong> hacer clic o arrastrar sobre la carta. El panel muestra en tiempo real: z normalizada, Z en ohmios (según Z₀), Γ en forma rectangular, |Γ|, su fase, el VSWR, la potencia reflejada y la pérdida de retorno. El círculo naranja discontinuo es el círculo de VSWR constante; el vector blanco va del centro al punto (su longitud es |Γ|). El color del punto cambia de verde (buena adaptación) a rojo (reflexión elevada).</p>
+      <p><strong>Uso:</strong> hacer clic o arrastrar sobre la carta. El panel muestra en tiempo real: z normalizada, Z en ohmios (según Z₀), Γ en forma rectangular, |Γ|, su fase, el VSWR, la potencia reflejada El círculo naranja discontinuo es el círculo de VSWR constante; el vector blanco va del centro al punto (su longitud es |Γ|). El color del punto cambia de verde (buena adaptación) a rojo (reflexión elevada).</p>
       <p><strong>Recorrido sugerido con los ejemplos:</strong></p>
       <ol>
         <li>Adaptación perfecta (50 Ω): centro, Γ = 0, VSWR = 1.</li>
