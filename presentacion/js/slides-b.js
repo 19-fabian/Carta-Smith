@@ -468,7 +468,7 @@
         </div>
         <div class="col">
           <div class="center rv right"><div class="chart-host" style="width:400px;height:400px"></div></div>
-          <div class="readouts rv right">${ro('|Γ|', 'm', 'orange')}${ro('VSWR', 'vswr', 'turq')}${ro('Potencia reflejada', 'p', 'orange')}${ro('Pérdida de retorno', 'rl', 'violet')}</div>
+          <div class="readouts rv right">${ro('|Γ|', 'm', 'orange')}${ro('VSWR', 'vswr', 'turq')}<div class="ro orange wide"><div class="lbl">Potencia reflejada</div><div class="val" data-k="p">—</div></div></div>
           <p class="small muted rv right" style="margin:0">El círculo de VSWR corta el eje real derecho justo en <b class="hl">r = VSWR</b>.</p>
         </div>
       </div>`,

@@ -259,7 +259,6 @@
             ['bolt', 'Menos potencia en la carga', 'En una línea sin pérdidas: P<sub>L</sub> = P<sub>inc</sub>(1 − |Γ|²).', 'pd'],
             ['swr', 'Ondas estacionarias', 'La suma de ondas crea máximos y mínimos de tensión fijos.', 'sw'],
             ['warn', 'Esfuerzos eléctricos', 'Picos de tensión de hasta (1 + |Γ|)·|V⁺| sobre dieléctricos y transistores.', 'vm'],
-            ['heat', 'Eficiencia del sistema', 'El transmisor ve una carga distinta de la de diseño: menor rendimiento y calentamiento.', 'rl'],
           ].map(([ic, t, d, key], i) => `
             <div class="card row rv right prob" data-p="${key}" style="--i:${i + 2}; flex-wrap:nowrap; padding:10px 14px">
               <div class="icon-badge">${icon(ic)}</div>
@@ -274,7 +273,7 @@
     notes: `
       <p><strong>Relación con la diapositiva anterior:</strong> ya vimos que la desadaptación produce una onda reflejada. Ahora cuantificamos sus consecuencias.</p>
       <p><strong>Demostración:</strong> mover el deslizador de R<sub>L</sub>. En 50 Ω (con X = 0) la onda reflejada desaparece, la envolvente es plana y el VSWR vale 1. Al alejarse de 50 Ω crece la onda naranja y la envolvente violeta muestra máximos y mínimos: es la onda estacionaria. Probar también una reactancia (X ≠ 0): aunque R sea 50 Ω, sigue habiendo reflexión.</p>
-      <p><strong>Consecuencias:</strong> (1) potencia reflejada |Γ|²; (2) potencia entregada 1 − |Γ|² en una línea ideal; (3) ondas estacionarias; (4) picos de tensión de hasta (1 + |Γ|) veces la amplitud incidente, que pueden dañar componentes o perforar dieléctricos en sistemas de potencia; (5) el amplificador trabaja con una carga distinta de la de diseño.</p>
+      <p><strong>Consecuencias:</strong> (1) potencia reflejada |Γ|²; (2) potencia entregada 1 − |Γ|² en una línea ideal; (3) ondas estacionarias; (4) picos de tensión de hasta (1 + |Γ|) veces la amplitud incidente, que pueden dañar componentes o perforar dieléctricos en sistemas de potencia.</p>
       <p><strong>Precisión importante:</strong> no decir que la potencia reflejada "siempre se pierde". Regresa a la fuente; lo que le ocurra depende de la fuente y del sistema (puede disiparse, re-reflejarse o, en algunos sistemas, gestionarse con circuladores y aisladores). Lo que sí es cierto es que esa potencia no se entregó a la carga.</p>`,
     init(el) {
       const svg = q(el, 'svg.sw');
